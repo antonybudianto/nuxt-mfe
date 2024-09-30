@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-mfe-demo",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Demo Nuxt.js MFE",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "concurrently \"yarn install:nuxt-qiankun\"  \"yarn install:nuxt\"",
+    "install:nuxt-qiankun": "cd nuxt-qiankun-project && yarn",
+    "install:nuxt": "cd nuxt-subapp && yarn",
+    "serve:all": "concurrently \"yarn serve:nuxt-qiankun\" \"yarn serve:nuxt\" \"yarn serve:vue\"",
+    "serve:nuxt-qiankun": "cd nuxt-qiankun-project && yarn dev",
+    "serve:nuxt": "cd nuxt-subapp  && yarn dev",
+    "build:all": "concurrently \"yarn build:nuxt-qiankun\" \"yarn build:nuxt\"",
+    "build:nuxt-qiankun": "cd master && yarn build",
+    "build:nuxt": "cd nuxt-subapp && yarn build"
+  },
+  "keywords": [],
+  "author": "https://github.com/antonybudianto/nuxt-mfe",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
