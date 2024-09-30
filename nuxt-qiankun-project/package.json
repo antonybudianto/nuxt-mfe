@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "cross-env PORT=7100 nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "PORT=7100 nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {

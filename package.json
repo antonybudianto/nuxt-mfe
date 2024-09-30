@@ -8,11 +8,11 @@
     "install:all": "concurrently \"yarn install:nuxt-qiankun\"  \"yarn install:nuxt\"",
     "install:nuxt-qiankun": "cd nuxt-qiankun-project && yarn",
     "install:nuxt": "cd nuxt-subapp && yarn",
-    "serve:all": "concurrently \"yarn serve:nuxt-qiankun\" \"yarn serve:nuxt\" \"yarn serve:vue\"",
+    "serve:all": "concurrently \"yarn serve:nuxt-qiankun\" \"yarn serve:nuxt\"",
     "serve:nuxt-qiankun": "cd nuxt-qiankun-project && yarn dev",
     "serve:nuxt": "cd nuxt-subapp  && yarn dev",
     "build:all": "concurrently \"yarn build:nuxt-qiankun\" \"yarn build:nuxt\"",
-    "build:nuxt-qiankun": "cd master && yarn build",
+    "build:nuxt-qiankun": "cd nuxt-qiankun-project && yarn build",
     "build:nuxt": "cd nuxt-subapp && yarn build"
   },
   "keywords": [],

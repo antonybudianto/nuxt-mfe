@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env PORT=7102 nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "build": "HOST=localhost PORT=7102 nuxt build",
+    "start": "PORT=7102 nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
